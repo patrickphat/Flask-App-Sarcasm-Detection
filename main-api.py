@@ -15,7 +15,7 @@ def sar_submit():
     if not sentence:
         return render_template('sar_failure.html')
 
-    return render_template('sar_successful.html',sentence=str(type(sentence)))
+    return render_template('sar_successful.html',sentence=sentence)
 
 @app.route("/")
 def index():
